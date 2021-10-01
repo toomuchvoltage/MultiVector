@@ -1,5 +1,5 @@
 # MultiVector
-I just wrapped my head around geometric/clifford algebra and wanted to do quick tests. Could not find anything other than [Versor](https://github.com/wolftype/versor) and it has a ton of cruft... plus doesn't seem to provide a path for Windows compilation. Thus I cooked this up. It supports elementary stuff up to G(3) at this point.
+I just wrapped my head around Clifford/Geometric Algebra and wanted to do quick tests. Could not find anything other than [Versor](https://github.com/wolftype/versor) and it has a ton of cruft... plus doesn't seem to provide a path for Windows compilation. Thus I cooked this up. It supports elementary stuff up to G(3) at this point.
 There are some seriously expensive (O(n^2)) stuff happening in `cleanup()` so it's not by any means optimized. However, if that is called after every operation -- as it is now -- it should always remain reasonably performant.
 
 `vec3.hpp` is just a test class to verify your results from spinning and so on. Replace with `glm` in a serious context.
